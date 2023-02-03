@@ -21,11 +21,11 @@ module.exports = ({ env }) => ({
       size: 10,
     },
   },
-  menus: {
-    config: {
-      maxDepth: 3,
-    },
-  },
+  // menus: {
+  //   config: {
+  //     maxDepth: 3,
+  //   },
+  // },
   // "vercel-deploy": {
   //   enabled: true,
   // },
