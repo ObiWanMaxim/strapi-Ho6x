@@ -1,19 +1,23 @@
 {
-  "collectionName": "components_restaurant_more_information",
+  "collectionName": "components_project_more_information",
   "info": {
     "displayName": "moreInformation",
     "icon": "allergies"
   },
   "options": {},
   "attributes": {
-    "address": {
+    "interior_design": {
       "type": "string"
     },
-    "website": {
+    "branding": {
       "type": "string"
     },
-    "phone": {
+    "photography": {
+      "type": "string"
+    },
+    "signing": {
       "type": "string"
     }
+
   }
 }

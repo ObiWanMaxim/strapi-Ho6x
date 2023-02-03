@@ -19,10 +19,10 @@
       "type": "uid",
       "targetField": "name"
     },
-    "restaurants": {
+    "projects": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::restaurant.restaurant",
+      "target": "api::project.project",
       "mappedBy": "category"
     },
     "articles": {

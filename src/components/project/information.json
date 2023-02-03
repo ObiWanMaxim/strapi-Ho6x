@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_restaurant_information",
+  "collectionName": "components_project_information",
   "info": {
     "displayName": "information",
     "icon": "align-center"
@@ -9,15 +9,11 @@
     "description": {
       "type": "text"
     },
-    "opening_hours": {
-      "type": "component",
-      "repeatable": true,
-      "component": "restaurant.opening-hours"
-    },
+
     "location": {
       "type": "component",
       "repeatable": false,
-      "component": "restaurant.location"
+      "component": "project.location"
     }
   }
 }

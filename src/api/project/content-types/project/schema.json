@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "restaurants",
+  "collectionName": "projects",
   "info": {
-    "singularName": "restaurant",
-    "pluralName": "restaurants",
-    "displayName": "restaurant",
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project",
     "description": ""
   },
   "options": {
@@ -72,7 +72,7 @@
           "localized": true
         }
       },
-      "component": "restaurant.information"
+      "component": "project.information"
     },
     "socialNetworks": {
       "type": "component",
@@ -92,8 +92,8 @@
       },
       "type": "dynamiczone",
       "components": [
-        "restaurant.rich-content",
-        "blocks.related-restaurants",
+        "project.rich-content",
+        "blocks.related-projects",
         "blocks.faq",
         "blocks.cta",
         "blocks.cta-command-line"
@@ -113,19 +113,32 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "restaurants"
+      "inversedBy": "projects"
     },
     "place": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::place.place",
-      "inversedBy": "restaurants"
+      "inversedBy": "projects"
     },
     "reviews": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::review.review",
-      "mappedBy": "restaurant"
+      "mappedBy": "project"
+    },
+    "Banner": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "required": true
     }
   }
 }

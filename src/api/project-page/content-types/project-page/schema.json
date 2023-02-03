@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "restaurant_pages",
+  "collectionName": "project_pages",
   "info": {
-    "singularName": "restaurant-page",
-    "pluralName": "restaurant-pages",
-    "displayName": "RestaurantPage"
+    "singularName": "project-page",
+    "pluralName": "project-pages",
+    "displayName": "projectPage"
   },
   "options": {
     "draftAndPublish": true
@@ -52,7 +52,7 @@
       "type": "string",
       "required": true
     },
-    "restaurantsPerPage": {
+    "projectsPerPage": {
       "pluginOptions": {
         "i18n": {
           "localized": false

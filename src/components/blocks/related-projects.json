@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_restaurant_related_restaurants",
+  "collectionName": "components_project_related_projects",
   "info": {
-    "displayName": "relatedRestaurants",
+    "displayName": "relatedprojects",
     "icon": "copy",
     "description": ""
   },
@@ -12,10 +12,10 @@
       "repeatable": false,
       "component": "shared.header"
     },
-    "restaurants": {
+    "projects": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::restaurant.restaurant"
+      "target": "api::project.project"
     }
   }
 }

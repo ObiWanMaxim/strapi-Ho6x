@@ -7,13 +7,13 @@ import { useIntl } from "react-intl";
 const TweetButton = () => {
   const { formatMessage } = useIntl();
   const { modifiedData, layout } = useCMEditViewDataManager();
-  const allowedTypes = ["restaurant", "article"];
+  const allowedTypes = ["project", "article"];
 
   if (!allowedTypes.includes(layout.apiID)) {
     return <></>;
   }
 
-  const base = layout.apiID == "restaurant" ? "restaurants" : "blog";
+  const base = layout.apiID == "project" ? "projects" : "blog";
 
   const handleTweet = () => {
     const tweetUrl = `https://twitter.com/intent/tweet?text=${`${encodeURIComponent(
