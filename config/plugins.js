@@ -1,4 +1,34 @@
 module.exports = ({ env }) => ({
+  navigation: {
+    enabled: true,
+    config: {
+      additionalFields: [
+        "audience",
+        { name: "my_custom_field", type: "boolean", label: "My custom field" },
+      ],
+      contentTypes: ["api::project.project", "api::page.page"],
+      contentTypesNameFields: {
+        "api::page.page": ["title"],
+        "api::project.project": ["name"],
+      },
+      allowedLevels: 2,
+      // gql: {...},
+    },
+  },
+  placeholder: {
+    enabled: true,
+    config: {
+      size: 10,
+    },
+  },
+  menus: {
+    config: {
+      maxDepth: 3,
+    },
+  },
+  // "vercel-deploy": {
+  //   enabled: true,
+  // },
   "users-permissions": {
     config: {
       jwtSecret: env("JWT_SECRET"),
@@ -32,6 +62,18 @@ module.exports = ({ env }) => ({
     enabled: true,
     config: {
       localization: true,
+    },
+  },
+  graphql: {
+    config: {
+      endpoint: "/graphql",
+      shadowCRUD: true,
+      playgroundAlways: false,
+      depthLimit: 7,
+      amountLimit: 100,
+      apolloServer: {
+        tracing: false,
+      },
     },
   },
   // upload: {

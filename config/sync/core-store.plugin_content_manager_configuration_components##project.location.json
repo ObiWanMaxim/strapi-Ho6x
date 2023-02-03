@@ -1,0 +1,115 @@
+{
+  "key": "plugin_content_manager_configuration_components::project.location",
+  "value": {
+    "uid": "project.location",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "interior_design",
+      "defaultSortBy": "interior_design",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "interior_design": {
+        "edit": {
+          "label": "interior_design",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "interior_design",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "branding": {
+        "edit": {
+          "label": "branding",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "branding",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "photography": {
+        "edit": {
+          "label": "photography",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "photography",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "signing": {
+        "edit": {
+          "label": "signing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "signing",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "interior_design",
+        "branding",
+        "photography"
+      ],
+      "edit": [
+        [
+          {
+            "name": "interior_design",
+            "size": 6
+          },
+          {
+            "name": "branding",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "photography",
+            "size": 6
+          },
+          {
+            "name": "signing",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
